@@ -19,8 +19,10 @@ function loadMode()
 
 function setMode()
 {
+	var e = document.getElementById("hidden-li");
 	var db = document.body;
 	db.classList.toggle("dark-mode");
+	e.style.color = (e.style.color == "white") ? "black" : "white";
 	swapMode();
 	checkMode();
 }
